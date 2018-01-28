@@ -2,17 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import '../assets/global.css'
 import styled from 'styled-components'
+import 'prismjs/themes/prism-solarizedlight.css'
 
 export default ({ children }) => {
   return (
     <Wrap>
       <Header>
-        <Link to='/'>首页</Link>
+        <Link to="/">首页</Link>
       </Header>
       <MainWrap>
-        <Inner>
-          {children()}
-        </Inner>
+        <Inner>{children()}</Inner>
       </MainWrap>
     </Wrap>
   )
